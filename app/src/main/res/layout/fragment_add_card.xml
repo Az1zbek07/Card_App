@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".fragments.AddCardFragment">
+
+    <include
+        android:id="@+id/itemLayout"
+        layout="@layout/item_layout" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Card number"
+        android:background="@drawable/shape_edit_text"
+        android:paddingStart="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/editNumber" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_text"
+            android:paddingStart="20dp"
+            android:id="@+id/editDate1"
+            android:hint="Date 1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_text"
+            android:paddingStart="20dp"
+            android:id="@+id/editDate2"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Date 2" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_text"
+            android:paddingStart="20dp"
+            android:id="@+id/editCvv"
+            android:hint="CVV" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Holder name"
+        android:background="@drawable/shape_edit_text"
+        android:paddingStart="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/editHolderName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btnSubmit" />
+
+</LinearLayout>
